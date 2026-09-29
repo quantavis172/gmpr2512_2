@@ -20,24 +20,23 @@ public class CircleBumper : MonoBehaviour
         if (Time.time > timeStamp + delayTime && rend.color == Color.white)
         {
             rend.color = Color.black;
+           // outerCircle.transform.localScale = new Vector3(2.2f, 2.2f, 0);
         }
-        
+
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-       
-        Debug.Log("change");
         timeStamp = Time.time;
-        rend.color = Color.green;
+        rend.color = Color.white;
+      //  outerCircle.transform.localScale = new Vector3(2.5f, 2.5f, 0);
 
-        Vector2 direction = (collision.transform.position - transform.position);
+        // Position of the pinball minus the bumper position gives me a Vector from the bumper toward the pinball.
+        Vector2 direction = (collision.transform.position - transform.position).normalized;
 
         Vector2 impulse = direction * forceValue;
 
         Rigidbody2D rb = collision.gameObject.GetComponent<Rigidbody2D>();
 
-        
-
+        rb.AddForce(impulse * rb.mass, ForceMode2D.Impulse);
     }
 }
