@@ -7,7 +7,8 @@ public class PlayerControl : MonoBehaviour
     [SerializeField] Rigidbody2D ball;
     [SerializeField] HingeJoint2D leftFlipper, rightFlipper;
     [SerializeField] GameObject launcher, upperLimit, lowerLimit;
-    //test
+    //test  test 2 
+    //test for commit
     public bool canLaunch;
     [SerializeField] float launcherSpeedDown, launcherSpeedUp;
 
