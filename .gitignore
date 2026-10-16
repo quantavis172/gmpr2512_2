@@ -10,6 +10,14 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
+
+# Unity project is inside Day2_2_D
+Day2_2_D/[Ll]ibrary/
+Day2_2_D/[Tt]emp/
+Day2_2_D/[Oo]bj/
+Day2_2_D/[Ll]ogs/
+Day2_2_D/[Uu]ser[Ss]ettings/
+
 *.log
 
 # MemoryCaptures can get excessive in size.
