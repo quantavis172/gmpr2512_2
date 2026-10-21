@@ -5,14 +5,14 @@ using UnityEngine.InputSystem;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] Rigidbody2D ball;
-    [SerializeField] HingeJoint2D leftFlipper, rightFlipper;
+    [SerializeField] HingeJoint2D leftFlipper, rightFlipper, rightFlipper2;
     [SerializeField] GameObject launcher, upperLimit, lowerLimit;
 
     public bool canLaunch;
     [SerializeField] float launcherSpeedDown, launcherSpeedUp, launcherForce;
 
     float launchDistance;
-    public bool isLaunched;
+    public bool isLaunched, flippersActive;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -60,13 +60,14 @@ public class PlayerControl : MonoBehaviour
                 launcher.transform.position = new Vector2(launcher.transform.position.x, upperLimit.transform.position.y);
             }
         }
-
+        //exit game
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             Application.Quit();
         }
+        //flippers
 
-        if (Keyboard.current.aKey.isPressed)
+        if (Keyboard.current.aKey.isPressed && flippersActive)
         {
             leftFlipper.useMotor = true;
         }
@@ -75,15 +76,17 @@ public class PlayerControl : MonoBehaviour
             leftFlipper.useMotor = false;
         }
 
-        if (Keyboard.current.dKey.isPressed)
+        if (Keyboard.current.dKey.isPressed && flippersActive)
         {
             rightFlipper.useMotor = true;
+            rightFlipper2.useMotor = true;
         }
         else
         {
             rightFlipper.useMotor = false;
+            rightFlipper2.useMotor = false;
         }
     }
 
 
-}
+} 
