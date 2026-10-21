@@ -11,5 +11,6 @@ public class LaunchTrigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         playerInput.GetComponent<PlayerControl>().canLaunch = false;
+        //making a change for a test commit 
     }
 }
