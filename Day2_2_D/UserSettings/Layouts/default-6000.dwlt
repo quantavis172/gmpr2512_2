@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 112}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 37
+  controlID: 92
   draggingID: 0
 --- !u!114 &3
 MonoBehaviour:
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 42.666668
     width: 1706.6666
     height: 36
   m_SerializedDataModeController:
@@ -567,7 +567,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 694
+    y: 748.6667
     width: 1366.3334
     height: 224
   m_SerializedDataModeController:
@@ -619,6 +619,8 @@ MonoBehaviour:
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 51838
+    - m_Data: 1000000000
+    - m_Data: 2147483647
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -737,8 +739,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1368.3334
-    y: 24
+    x: 1367.3334
+    y: 78.66667
     width: 338.33325
     height: 894
   m_SerializedDataModeController:
@@ -790,7 +792,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 78.66667
     width: 337
     height: 644
   m_SerializedDataModeController:
@@ -813,10 +815,22 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
+      - m_Data: -64922
+      - m_Data: -64642
+      - m_Data: -64622
+      - m_Data: -42300
+      - m_Data: -42020
+      - m_Data: -42000
+      - m_Data: -17096
       - m_Data: -1382
       - m_Data: 51444
+      - m_Data: 51458
       - m_Data: 51542
+      - m_Data: 51680
       - m_Data: 51756
+      - m_Data: 66850
+      - m_Data: 66964
+      - m_Data: 67090
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -864,8 +878,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 339
-    y: 24
+    x: 338
+    y: 78.66667
     width: 1027.3334
     height: 644
   m_SerializedDataModeController:
@@ -1354,9 +1368,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: -0.7753019, y: -2.8189657, z: -0.031890914}
+    m_Target: {x: 2.9933176, y: 2.3936017, z: 1.2832373}
     speed: 2
-    m_Value: {x: -0.7753019, y: -2.8189657, z: -0.031890914}
+    m_Value: {x: 2.9933176, y: 2.3936017, z: 1.2832373}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1407,9 +1421,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 4.679735
+    m_Target: 7.8579698
     speed: 2
-    m_Value: 4.679735
+    m_Value: 7.8579698
   m_Ortho:
     m_Target: 1
     speed: 2
