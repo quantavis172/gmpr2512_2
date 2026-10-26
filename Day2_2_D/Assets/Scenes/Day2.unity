@@ -335,6 +335,7 @@ MonoBehaviour:
   rend: {fileID: 136163601}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &136163599
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -386,6 +387,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &136163601
 SpriteRenderer:
   serializedVersion: 2
@@ -664,6 +666,7 @@ MonoBehaviour:
   rend: {fileID: 209776149}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &209776147
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -715,6 +718,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &209776149
 SpriteRenderer:
   serializedVersion: 2
@@ -1172,6 +1176,7 @@ MonoBehaviour:
   rend: {fileID: 298740077}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &298740075
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1223,6 +1228,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &298740077
 SpriteRenderer:
   serializedVersion: 2
@@ -1734,7 +1740,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -2590,6 +2596,7 @@ MonoBehaviour:
   rend: {fileID: 674070421}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &674070419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2641,6 +2648,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &674070421
 SpriteRenderer:
   serializedVersion: 2
@@ -3264,8 +3272,8 @@ GameObject:
   - component: {fileID: 991118136}
   - component: {fileID: 991118140}
   - component: {fileID: 991118139}
-  - component: {fileID: 991118138}
   - component: {fileID: 991118137}
+  - component: {fileID: 991118141}
   m_Layer: 0
   m_Name: BumperA
   m_TagString: Untagged
@@ -3324,20 +3332,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!114 &991118138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 991118135}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19f5936ae5b01fe44bb0069965499c82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AlternatingBumper
-  bumperOne: {fileID: 991118135}
-  bumperTwo: {fileID: 1730441924}
 --- !u!114 &991118139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3353,6 +3347,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &991118140
 SpriteRenderer:
   serializedVersion: 2
@@ -3412,6 +3407,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &991118141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991118135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f5936ae5b01fe44bb0069965499c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AlternatingBumper
+  bumperOne: {fileID: 991118139}
+  bumperTwo: {fileID: 1730441927}
 --- !u!1 &999011655
 GameObject:
   m_ObjectHideFlags: 0
@@ -3578,6 +3587,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 354605982}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!1 &1044971036
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044971038}
+  m_Layer: 0
+  m_Name: AltBumperManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044971038
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044971036}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.82855, y: 1.10714, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229775111
 GameObject:
   m_ObjectHideFlags: 0
@@ -3973,7 +4013,7 @@ Transform:
   m_GameObject: {fileID: 1275395778}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.44, y: -0.36, z: 0}
+  m_LocalPosition: {x: 2.43, y: 0.7, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4556,6 +4596,7 @@ MonoBehaviour:
   rend: {fileID: 1499784650}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &1499784648
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -4607,6 +4648,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &1499784650
 SpriteRenderer:
   serializedVersion: 2
@@ -5300,7 +5342,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 50
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -5417,6 +5459,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &1730441928
 SpriteRenderer:
   serializedVersion: 2
@@ -5526,6 +5569,7 @@ MonoBehaviour:
   rend: {fileID: 1878715486}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &1878715484
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -5577,6 +5621,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &1878715486
 SpriteRenderer:
   serializedVersion: 2
@@ -6037,6 +6082,7 @@ MonoBehaviour:
   rend: {fileID: 2005755933}
   delayTime: 0.2
   forceValue: 0
+  isActive: 1
 --- !u!58 &2005755931
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6088,6 +6134,7 @@ MonoBehaviour:
   rend: {fileID: 0}
   delayTime: 0
   forceValue: 0
+  isActive: 1
 --- !u!212 &2005755933
 SpriteRenderer:
   serializedVersion: 2
@@ -6535,3 +6582,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 2127745348}
   - {fileID: 1657153790}
+  - {fileID: 1044971038}

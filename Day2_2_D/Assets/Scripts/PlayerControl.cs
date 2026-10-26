@@ -75,11 +75,11 @@ public class PlayerControl : MonoBehaviour
         {
             if (Keyboard.current.aKey.isPressed)
             {
-                leftMotor.motorSpeed = -1000f;
+                leftMotor.motorSpeed = -10000f;
             }
             else
             {
-                leftMotor.motorSpeed = 1000f;
+                leftMotor.motorSpeed = 10000f;
             }
 
             leftFlipper.motor = leftMotor;
@@ -97,11 +97,11 @@ public class PlayerControl : MonoBehaviour
         {
             if (Keyboard.current.dKey.isPressed)
             {
-                rightMotor.motorSpeed = 1000f;
+                rightMotor.motorSpeed = 10000f;
             }
             else
             {
-                rightMotor.motorSpeed = -1000f;
+                rightMotor.motorSpeed = -10000f;
             }
 
             rightFlipper.motor = rightMotor;

@@ -9,6 +9,8 @@ public class CircleBumper : MonoBehaviour
     [SerializeField] float forceValue;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     float timeStamp;
+
+    public bool isActive = true;
     void Start()
     {
         //delayTime = 0.5f;
@@ -25,13 +27,17 @@ public class CircleBumper : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (!isActive)
+        {
+            return;
+        }
+
         timeStamp = Time.time;
         rend.color = Color.white;
-      
 
-        //ranmdom color on collision
-        rend.color = Random.ColorHSV();  
-       
+        //random color on collision
+        rend.color = Random.ColorHSV();
+
         // Impulse force
         Vector2 direction = (collision.transform.position - transform.position).normalized;
         Vector2 impulse = direction * forceValue;

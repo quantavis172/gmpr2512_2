@@ -2,13 +2,17 @@ using UnityEngine;
 
 public class AlternatingBumper : MonoBehaviour
 {
-    [SerializeField] GameObject bumperOne;
-    [SerializeField] GameObject bumperTwo;
+    [SerializeField] CircleBumper bumperOne;
+    [SerializeField] CircleBumper bumperTwo;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        bumperOne.isActive = true;
+        bumperTwo.isActive = false;
 
+        bumperOne.GetComponent<SpriteRenderer>().color = Color.green;
+        bumperTwo.GetComponent<SpriteRenderer>().color = Color.red;
     }
 
     // Update is called once per frame
@@ -19,15 +23,18 @@ public class AlternatingBumper : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (bumperOne.activeSelf)
+        bumperOne.isActive = !bumperOne.isActive;
+        bumperTwo.isActive = !bumperTwo.isActive;
+
+        if (bumperOne.isActive)
         {
-            bumperOne.SetActive(false);
-            bumperTwo.SetActive(true);
+            bumperOne.GetComponent<SpriteRenderer>().color = Color.green;
+            bumperTwo.GetComponent<SpriteRenderer>().color = Color.red;
         }
         else
         {
-            bumperOne.SetActive(true);
-            bumperTwo.SetActive(false);
+            bumperOne.GetComponent<SpriteRenderer>().color = Color.red;
+            bumperTwo.GetComponent<SpriteRenderer>().color = Color.green;
         }
     }
 }
