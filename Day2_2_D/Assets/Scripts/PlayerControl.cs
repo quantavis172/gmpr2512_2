@@ -19,12 +19,13 @@ public class PlayerControl : MonoBehaviour
     {
         //canLaunch = true;
         isLaunched = true;
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Keyboard.current.sKey.isPressed)
+        if (Keyboard.current.sKey.isPressed && canLaunch)
         {
             if (isLaunched && canLaunch)
             {
@@ -70,33 +71,47 @@ public class PlayerControl : MonoBehaviour
         // Left Flipper
         JointMotor2D leftMotor = leftFlipper.motor;
 
-        if (Keyboard.current.aKey.isPressed && flippersActive)
+        if (flippersActive)
         {
-            leftMotor.motorSpeed = -1000f;
+            if (Keyboard.current.aKey.isPressed)
+            {
+                leftMotor.motorSpeed = -1000f;
+            }
+            else
+            {
+                leftMotor.motorSpeed = 1000f;
+            }
+
+            leftFlipper.motor = leftMotor;
+            leftFlipper.useMotor = true;
         }
         else
         {
-            leftMotor.motorSpeed = 1000f;
+            leftFlipper.useMotor = false;
         }
-
-        leftFlipper.motor = leftMotor;
-        leftFlipper.useMotor = true;
-
 
         // Right Flipper
         JointMotor2D rightMotor = rightFlipper.motor;
 
-        if (Keyboard.current.dKey.isPressed && flippersActive)
+        if (flippersActive)
         {
-            rightMotor.motorSpeed = 1000f;
+            if (Keyboard.current.dKey.isPressed)
+            {
+                rightMotor.motorSpeed = 1000f;
+            }
+            else
+            {
+                rightMotor.motorSpeed = -1000f;
+            }
+
+            rightFlipper.motor = rightMotor;
+            rightFlipper.useMotor = true;
         }
         else
         {
-            rightMotor.motorSpeed = -1000f;
+            rightFlipper.useMotor = false;
         }
-
-        rightFlipper.motor = rightMotor;
-        rightFlipper.useMotor = true;
-
-         }
+        
+    
+      }
     } 
