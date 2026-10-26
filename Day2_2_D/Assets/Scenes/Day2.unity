@@ -1475,7 +1475,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1659,6 +1659,7 @@ MonoBehaviour:
   ball: {fileID: 1275395780}
   leftFlipper: {fileID: 511693040}
   rightFlipper: {fileID: 1721357655}
+  rightFlipper2: {fileID: 0}
   launcher: {fileID: 528582812}
   upperLimit: {fileID: 207999871}
   lowerLimit: {fileID: 1229775111}
@@ -1667,6 +1668,7 @@ MonoBehaviour:
   launcherSpeedUp: 10
   launcherForce: 20
   isLaunched: 1
+  flippersActive: 0
 --- !u!61 &528582814
 BoxCollider2D:
   m_ObjectHideFlags: 0
