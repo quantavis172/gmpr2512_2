@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class PlayerControl : MonoBehaviour
 {
     [SerializeField] Rigidbody2D ball;
-    [SerializeField] HingeJoint2D leftFlipper, rightFlipper, rightFlipper2;
+    [SerializeField] HingeJoint2D leftFlipper, rightFlipper;
     [SerializeField] GameObject launcher, upperLimit, lowerLimit;
 
     public bool canLaunch;
@@ -67,26 +67,36 @@ public class PlayerControl : MonoBehaviour
         }
         //flippers
 
+        // Left Flipper
+        JointMotor2D leftMotor = leftFlipper.motor;
+
         if (Keyboard.current.aKey.isPressed && flippersActive)
         {
-            leftFlipper.useMotor = true;
+            leftMotor.motorSpeed = -1000f;
         }
         else
         {
-            leftFlipper.useMotor = false;
+            leftMotor.motorSpeed = 1000f;
         }
+
+        leftFlipper.motor = leftMotor;
+        leftFlipper.useMotor = true;
+
+
+        // Right Flipper
+        JointMotor2D rightMotor = rightFlipper.motor;
 
         if (Keyboard.current.dKey.isPressed && flippersActive)
         {
-            rightFlipper.useMotor = true;
-            rightFlipper2.useMotor = true;
+            rightMotor.motorSpeed = 1000f;
         }
         else
         {
-            rightFlipper.useMotor = false;
-            rightFlipper2.useMotor = false;
+            rightMotor.motorSpeed = -1000f;
         }
-    }
 
+        rightFlipper.motor = rightMotor;
+        rightFlipper.useMotor = true;
 
-} 
+         }
+    } 
