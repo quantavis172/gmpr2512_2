@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "ShipMovements",
+    "maps": [
+        {
+            "name": "Ship",
+            "id": "dd3e9105-c595-4ea5-8810-55d49a01143c",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "af2b9cbb-bdcc-41d8-b819-6ef3a8410305",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ff6057bb-1e81-4b7a-9891-70b8d7928209",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
