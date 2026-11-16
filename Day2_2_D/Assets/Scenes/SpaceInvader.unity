@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.99
@@ -170,6 +174,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -280,7 +288,7 @@ GameObject:
   m_Component:
   - component: {fileID: 273579814}
   - component: {fileID: 273579815}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: BottomBoundry
   m_TagString: Boundry
   m_Icon: {fileID: 0}
@@ -358,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274847294}
   - component: {fileID: 274847295}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftBoundry
   m_TagString: Boundry
   m_Icon: {fileID: 0}
@@ -438,7 +446,7 @@ GameObject:
   - component: {fileID: 672991245}
   - component: {fileID: 672991244}
   - component: {fileID: 672991243}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,8 +548,8 @@ MonoBehaviour:
   maxRotation: 25
   shipHeight: 0
   shipWidth: 0
-  bulletSpeed: 50
-  fireRate: 0.2
+  bulletSpeed: 10
+  fireRate: 0.5
   timeStamp: 0
   ammo: 5
   bullets: []
@@ -590,6 +598,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.81
@@ -629,6 +641,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -706,6 +722,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.83
@@ -745,6 +765,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -820,7 +844,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1021374291}
   - component: {fileID: 1021374292}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TopBoundry
   m_TagString: Boundry
   m_Icon: {fileID: 0}
@@ -1037,6 +1061,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.81
@@ -1076,6 +1104,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1151,7 +1183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521638159}
   - component: {fileID: 1521638160}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1244,6 +1276,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.54
@@ -1283,6 +1319,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1357,7 +1397,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1605438692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: WeaponLocation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1389,7 +1429,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1937941904}
   - component: {fileID: 1937941905}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1482,6 +1522,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.01
@@ -1521,6 +1565,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1598,7 +1646,7 @@ GameObject:
   - component: {fileID: 2011936968}
   - component: {fileID: 2011936969}
   - component: {fileID: 2011936970}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Fleet
   m_TagString: Alien
   m_Icon: {fileID: 0}
@@ -1744,7 +1792,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2049211762}
   - component: {fileID: 2049211763}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightBoundry
   m_TagString: Boundry
   m_Icon: {fileID: 0}
@@ -1824,6 +1872,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.84
@@ -1863,6 +1915,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1940,6 +1996,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 720837307347262133, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.53
@@ -1979,6 +2039,10 @@ PrefabInstance:
     - target: {fileID: 1174865560886464721, guid: a2549517f43baa24f8df4733019f86df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3646358606321295041, guid: a2549517f43baa24f8df4733019f86df, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
