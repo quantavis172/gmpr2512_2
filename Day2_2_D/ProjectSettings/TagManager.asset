@@ -8,6 +8,7 @@ TagManager:
   - Boundry
   - Alien
   - ShipBullet
+  - Barrier
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - Alien
   - AlienBullet
   - Boundary
-  - 
+  - Barrier
   - 
   - 
   - 

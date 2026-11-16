@@ -594,7 +594,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Prefabs/SpaceInvaders
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -604,7 +604,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Prefabs/SpaceInvaders
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\qbrun\Downloads\GMPR2521\GMPR2512_\Day2_2_D
   m_LockTracker:
@@ -613,12 +613,12 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 51584
+    - m_Data: 52408
     m_LastClickedID:
-      m_Data: 51584
+      m_Data: 52408
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52098
+    - m_Data: 51646
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -652,7 +652,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 52098
+    - m_Data: 51646
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -761,7 +761,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectEntityId:
     m_Data: 0
-  m_LastVerticalScrollValue: 911.3333
+  m_LastVerticalScrollValue: 486
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -812,10 +812,11 @@ MonoBehaviour:
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
-      - m_Data: -1382
-      - m_Data: 51392
-      - m_Data: 51408
-      - m_Data: 51476
+      - m_Data: -10728
+      - m_Data: -1430
+      - m_Data: 51914
+      - m_Data: 51930
+      - m_Data: 52012
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1355,7 +1356,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 1.6767696, y: -0.12321638, z: -0.060601357}
     speed: 2
-    m_Value: {x: -0.19459538, y: -0.3549503, z: -0.052766558}
+    m_Value: {x: 1.6767696, y: -0.12321638, z: -0.060601357}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1408,7 +1409,7 @@ MonoBehaviour:
   m_Size:
     m_Target: 6.9261575
     speed: 2
-    m_Value: 5.9948635
+    m_Value: 6.9261575
   m_Ortho:
     m_Target: 1
     speed: 2

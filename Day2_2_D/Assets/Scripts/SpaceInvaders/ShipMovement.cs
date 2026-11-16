@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -9,7 +10,7 @@ public class ShipMovement : MonoBehaviour
 
     [SerializeField] float movementSpeed = 5, rotateSpeed = 500, minRotation = -25, maxRotation = 25, shipHeight, shipWidth;
     [SerializeField] float bulletSpeed = 5, fireRate = 0.2f, timeStamp;
-    [SerializeField] int ammo = 5;
+    [SerializeField] int ammo = 50;
     [SerializeField] List<GameObject> bullets;
     [SerializeField] GameObject topBoundry, bottomBoundry, leftBoundry, rightBoundry;
 
@@ -80,21 +81,7 @@ public class ShipMovement : MonoBehaviour
         //}
         #endregion
 
-        #region Rotation
-        //float rotateDirection = rotateAction.ReadValue<float>();
-
-        //transform.Rotate(0, 0, rotateDirection * rotateSpeed * Time.deltaTime);
-
-        Vector3 angles = transform.eulerAngles;
-
-        if (angles.z > 180f)
-        {
-            angles.z -= 360f;
-        }
-
-        angles.z = Mathf.Clamp(angles.z, minRotation, maxRotation);
-        transform.eulerAngles = angles;
-        #endregion
+       
     }
 
     private void FixedUpdate()
@@ -123,6 +110,7 @@ public class ShipMovement : MonoBehaviour
                     bullets[i].GetComponent<Rigidbody2D>().linearVelocity = bullets[i].transform.up * bulletSpeed;
                 }
             }
+
         }
 
     }

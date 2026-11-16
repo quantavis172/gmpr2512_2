@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    [SerializeField] float moveDirection = 1, moveSpeed = 3.0f, moveDelay = 0.5f, dropDistance = 0.5f, timeStamp;
+    [SerializeField] float moveDirection = 1, moveSpeed = 3.0f, moveDelay = 0.5f, dropDistance = 3f, timeStamp;
 
     [SerializeField] float bulletSpeed = 5, fireRate = 2.0f, fireStamp;
     [SerializeField] int ammo = 5;
@@ -39,9 +39,6 @@ public class Target : MonoBehaviour
             bool found = false;
             
             
-            //int rand = Random.Range(0, bottomRow.Count);
-
-            //weaponLocation = bottomRow[rand].transform.position + Vector3.down;
 
             if (bottomRow.Count > 0)
             {
@@ -103,7 +100,7 @@ public class Target : MonoBehaviour
                 }
                 else
                 {
-                    //Debug.Log(hit.collider.name);
+                   
                 }
             }
         }
