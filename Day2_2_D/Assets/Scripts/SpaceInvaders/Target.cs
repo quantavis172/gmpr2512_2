@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Target : MonoBehaviour
 {
-    [SerializeField] float moveDirection = 1, moveSpeed = 3.0f, moveDelay = 0.5f, timeStamp;
+    [SerializeField] float moveDirection = 1, moveSpeed = 3.0f, moveDelay = 0.5f, dropDistance = 0.5f, timeStamp;
 
     [SerializeField] float bulletSpeed = 5, fireRate = 2.0f, fireStamp;
     [SerializeField] int ammo = 5;
@@ -37,9 +37,24 @@ public class Target : MonoBehaviour
             fireStamp = Time.time;
 
             bool found = false;
-            int rand = Random.Range(0, bottomRow.Count);
+            
+            
+            //int rand = Random.Range(0, bottomRow.Count);
 
-            weaponLocation = bottomRow[rand].transform.position + Vector3.down;
+            //weaponLocation = bottomRow[rand].transform.position + Vector3.down;
+
+            if (bottomRow.Count > 0)
+            {
+                int rand = Random.Range(0, bottomRow.Count);
+                weaponLocation = bottomRow[rand].transform.position + Vector3.down;
+
+               
+               }
+
+
+
+
+
 
             for (int i = 0; i < bullets.Count && !found; i++)
             {
@@ -59,6 +74,8 @@ public class Target : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+
         if (collision.transform.tag == "ShipBullet")
         {
             collision.otherCollider.gameObject.SetActive(false);
@@ -68,6 +85,7 @@ public class Target : MonoBehaviour
         {
             timeStamp = Time.time;
             moveDirection = -moveDirection;
+            transform.position += Vector3.down * dropDistance;
         }
     }
 
@@ -85,7 +103,7 @@ public class Target : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log(hit.collider.name);
+                    //Debug.Log(hit.collider.name);
                 }
             }
         }
