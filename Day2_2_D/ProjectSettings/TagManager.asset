@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ball
   - Boundry
+  - Alien
+  - ShipBullet
   layers:
   - Default
   - TransparentFX
@@ -13,11 +15,11 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Ship
+  - Bullet
+  - Alien
+  - AlienBullet
+  - Boundary
   - 
   - 
   - 

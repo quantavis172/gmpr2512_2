@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3946290932146148824}
   - component: {fileID: 2077381243809611104}
   - component: {fileID: 744129511377186078}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: AlienBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -13,15 +13,18 @@ public class Bullet : MonoBehaviour
     {
 
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+ 
+   private void OnCollisionEnter2D(Collision2D collision)
     {
-        // gameObject.SetActive(false);
+        if (collision.gameObject.CompareTag("Alien"))
+        {
+            collision.gameObject.SetActive(false);
+        }
 
-
+        gameObject.SetActive(false);
         Debug.Log("Bullet hit: " + collision.gameObject.name);
-    }
 
+    }
 
 
 }
