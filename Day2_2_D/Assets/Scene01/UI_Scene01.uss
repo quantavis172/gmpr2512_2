@@ -1,0 +1,21 @@
+VisualElement {}
+.ChangeToScene02Button {
+    width: 200px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #2c8cff;
+    color: white;
+    font-size: 20px;
+    unity-font-style: bold;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+.ChangeToScene02Button:hover {
+    background-color: #66aaff;
+}
+
+.ChangeToScene02Button:active {
+    background-color: #1a6fd0;
+}
