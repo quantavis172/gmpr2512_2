@@ -1,4 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/Scene01/UI_Scene01.uss?fileID=7433441132597879392&amp;guid=cb20bcb224d59284f89c0161f1b8ba5d&amp;type=3#UI_Scene01"/>
-    <ui:Button text="Button" enabled="true" name="ChangeToScene02Button" class="ChangeToScene02Button" style="position: absolute;"/>
+    <ui:Label text="0&#10;" enable-rich-text="true" style="position: absolute; height: 146px; width: 439px; top: 190px; left: 105px; font-size: 50px; color: rgb(255, 255, 255); -unity-text-outline-color: rgb(0, 0, 0);"/>
+    <ui:Button text="BIG BUTTON&#10;" name="bigButton" style="height: 171px; width: 412px; font-size: 50px;"/>
+    <ui:Button text="Score&#10;" enabled="true" name="ScoreButton" class="ChangeToScene02Button" style="position: absolute; top: 558px; left: 336px; height: 142px; width: 366px; font-size: 40px; color: rgb(0, 0, 0);"/>
 </ui:UXML>

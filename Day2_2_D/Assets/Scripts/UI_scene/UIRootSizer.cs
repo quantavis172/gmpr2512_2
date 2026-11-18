@@ -8,4 +8,5 @@ public class UIRootSizer : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
         root.StretchToParentSize();
     }
+
 }

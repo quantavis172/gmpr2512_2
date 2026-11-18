@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 public class SwitchToScene02 : MonoBehaviour
 {
 
-    Button _changeToScene02Button;
+    Button _scoreButton;
     //public UnityEngine.UI.Button changeButton;
     //public int number;
 
@@ -16,12 +16,12 @@ public class SwitchToScene02 : MonoBehaviour
     private void OnEnable()
     {
         VisualElement root = GetComponent<UIDocument>().rootVisualElement;
-        _changeToScene02Button = root.Q<Button>("ChangeToScene02");
+        _scoreButton = root.Q<Button>("ChangeToScene02");
         
 
-        if(_changeToScene02Button != null)
+        if(_scoreButton != null)
         {
-            _changeToScene02Button.clicked += OpenScene02;
+            _scoreButton.clicked += IncrementScore;
         }
 
 
@@ -33,13 +33,13 @@ public class SwitchToScene02 : MonoBehaviour
     }
     private void OnDisable()
     {
-        if(_changeToScene02Button != null)
+        if(_scoreButton != null)
         {
-            _changeToScene02Button.clicked -= OpenScene02;
+            _scoreButton.clicked -= IncrementScore;
         }
     }
 
-    void OpenScene02()
+    void IncrementScore()
     {
         Debug.Log("Button Clicked");
         SceneManager.LoadScene("Level01");
